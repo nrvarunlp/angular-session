@@ -1,21 +1,21 @@
-<h2>Practice works - 1!</h2>
+<h2>ngFor Practice</h2>
 <!-- ngFor -->
 <div class="p-2">
-  <p>*ngFor</p>
+  <p class="text-heading">Games list</p>
   <ul>
     <li *ngFor="let game of games">
       {{ game }}
     </li>
   </ul>
   <!-- ngIf -->
-  <p *ngIf="games.length > 3">There are many games!</p>
+  <p *ngIf="games.length > 3">Well looks like there more than 3 games!</p>
   <!-- ngIf -->
 </div>
 <!-- ngFor -->
 <hr>
 <!-- ngTemplate -->
 <div class="p-2">
-  <p>*ngTemplate</p>
+  <p class="text-heading">ngTemplate</p>
   <div *ngTemplateOutlet="ngTemplateSample"></div>
   <ng-template #ngTemplateSample>
     <span>{{infoList.name}}</span>: <span>{{infoList.id}}</span>
@@ -26,9 +26,9 @@
 <!-- ngIFElse -->
 
 <div class="p-2">
-  <p>*ngIfElse</p>
-  <button class="btn btn-primary" (click)="showInfo = !showInfo">
-    {{showInfo ? 'hideInfo' : 'showInfo'}}
+  <p class="text-heading">ngIfElse</p>
+  <button class="btn btn-outline-primary" (click)="showInfo = !showInfo">
+    {{showInfo ? 'hide' : 'show'}}
   </button>
   <p>showInfo: {{showInfo}}</p>
 </div>
@@ -46,7 +46,7 @@
 <hr>
 <!--Event Handle-->
 <div class="p-2">
-  <p>*click</p>
+  <p class="text-heading">Click events</p>
   <button class="btn btn-warning" (click)="onClickMe()">Click me!</button>
   <p>{{clickMessage}}</p>
 </div>

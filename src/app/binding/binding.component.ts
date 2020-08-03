@@ -1,11 +1,11 @@
 import { Component, OnInit } from '@angular/core';
 
 @Component({
-  selector: 'app-practice2',
-  templateUrl: './practice2.component.html',
-  styleUrls: ['./practice2.component.css'],
+  selector: 'app-binding',
+  templateUrl: './binding.component.html',
+  styleUrls: ['./binding.component.css'],
 })
-export class Practice2Component implements OnInit {
+export class BindingComponent implements OnInit {
   imageUrlBind = 'https://picsum.photos/seed/picsum/400/300';
 
   value = '';
